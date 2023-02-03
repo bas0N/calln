@@ -2,7 +2,26 @@
 
 # handlin
 
-> Handlin allows to generate and handle NodeJS API responses. It embraces the model-router-controller-service API model.
+> Handlin allows to generate and handle NodeJS API responses. By embracing the router-controller-service API model, handling standardizes the API data return format.
+
+Example of the API response with a help of [**handlin**](https://www.npmjs.com/package/handlin)
+
+```json
+{
+  "success": true,
+  "code": 200,
+  "data": {
+    "_id": "63dd72562dae3971744d65b1",
+    "isActive": false,
+    "balance": "$2,693.75",
+    "name": "Floyd Kerr",
+    "gender": "male",
+    "email": "floydkerr@satiance.com"
+  },
+  "status": "OK",
+  "message": "Standard response for successful HTTP requests."
+}
+```
 
 ## Prerequisites
 
@@ -39,8 +58,13 @@ v18.0.0
 
 ## Getting Started
 
+<br />
+<br />
+
 ## Installation
 
+<br />
+<br />
 ## RCS
 
 The **handling** package relies on Router Controller Service API design pattern.
@@ -50,6 +74,8 @@ In this pattern, a **Router component** is responsible for mapping incoming requ
 The **Controller component** then calls the appropriate Service component to execute the requested business logic, and finally returns the result to the Router component, which returns it to the client.
 
 The **Service component** encapsulates the application's business logic and communicates with data storage or other external systems as necessary.
+<br />
+<br />
 
 ## Usage
 
