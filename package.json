@@ -1,6 +1,6 @@
 {
   "name": "handlin",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "NodeJS API response generator and handler.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,7 +8,8 @@
     "/dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc"
   },
   "repository": {
     "type": "git",

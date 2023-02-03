@@ -1,4 +1,4 @@
-import { GenerateResult } from "../interfaces/generateResult.interface";
+import { GenerateResult } from "../interfaces/generateResponse.interface";
 import { Request, Response } from "express";
 
 export const handleResult = (
