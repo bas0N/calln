@@ -2,7 +2,11 @@
   "name": "handlin",
   "version": "1.0.1",
   "description": "NodeJS API response generator and handler.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +22,8 @@
   "homepage": "https://github.com/bas0N/calln#readme",
   "dependencies": {
     "http-status": "^1.6.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
   }
 }
