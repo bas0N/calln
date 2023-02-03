@@ -1,0 +1,22 @@
+{
+  "name": "handlin",
+  "version": "1.0.1",
+  "description": "NodeJS API response generator and handler.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bas0N/handlin.git"
+  },
+  "author": "bas0N",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bas0N/calln/issues"
+  },
+  "homepage": "https://github.com/bas0N/calln#readme",
+  "dependencies": {
+    "http-status": "^1.6.2"
+  }
+}
