@@ -1,2 +1,2 @@
-export { handleResult } from "./handler";
-export { generateResult } from "./generator";
+export { handleResponse } from "./responseHandler";
+export { generateResponse } from "./responseGenerator";

@@ -1,14 +1,14 @@
-import { GenerateResult } from "../interfaces/generateResponse.interface";
+import { GenerateResponse } from "../interfaces/generateResponse.interface";
 import httpStatus from "http-status";
 
-export const generateResult = <T extends {}>({
+export const generateResponse = <T extends {}>({
   code,
   status,
   message,
   data,
   redirectUrl,
-}: GenerateResult<T>) => {
-  const result: GenerateResult<T> = {
+}: GenerateResponse<T>) => {
+  const response: GenerateResponse<T> = {
     code,
     success: code === 200 || code === 201,
     status: status || (httpStatus[code] as string),
@@ -17,5 +17,5 @@ export const generateResult = <T extends {}>({
     redirectUrl,
   };
 
-  return result;
+  return response;
 };

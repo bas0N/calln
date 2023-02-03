@@ -1,4 +1,4 @@
-export interface GenerateResult<T> {
+export interface GenerateResponse<T> {
   code: number;
   success?: boolean;
   status?: string;
