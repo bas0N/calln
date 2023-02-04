@@ -1,4 +1,4 @@
-![banner](handlin-baner.png)
+![banner](./readmeAssets/handlin-baner.png)
 
 # handlin
 
@@ -42,32 +42,32 @@ v18.0.0
 
   - [Prerequisites](#prerequisites)
   - [Table of contents](#table-of-contents)
-  - [Getting Started](#getting-started)
   - [Installation](#installation)
   - [RCS](#rcs)
   - [Usage](#usage)
 
     - [Generating responses](#generating-responses)
     - [Handling responses](#handling-responses)
+    - [Sample express project using handlin](#sample-project)
 
   - [Contributing](#contributing)
-  - [Versioning](#versioning)
   - [Authors](#authors)
   - [License](#license)
   - [Readme template credits](#readme-template-credits)
 
-## Getting Started
-
-<br />
-<br />
-
 ## Installation
 
+To install and set up the library, run:
+
+```sh
+$ npm install handlin
+```
+
 <br />
-<br />
+
 ## RCS
 
-The **handling** package relies on Router Controller Service API design pattern.
+The [**handlin**](https://www.npmjs.com/package/handlin) package relies on Router Controller Service API design pattern.
 
 In this pattern, a **Router component** is responsible for mapping incoming requests to the appropriate Controller.
 
@@ -76,12 +76,13 @@ The **Controller component** then calls the appropriate Service component to exe
 The **Service component** encapsulates the application's business logic and communicates with data storage or other external systems as necessary.
 <br />
 <br />
+![banner](./readmeAssets/handlin-diagram.jpg)
 
 ## Usage
 
 ### Generating responses
 
-To generate response with handlin, you first need to import the generateResponse method:
+To generate response with handlin, you first need to import the generateResponse method to your service:
 
 ```js
 import { generateResponse } from "handlin";
@@ -113,7 +114,7 @@ return generateResponse({
 });
 ```
 
-Full sample of the code from service:
+Full sample of the code from sample.service.ts:
 
 ```ts
 import { generateResponse } from "handlin";
@@ -139,7 +140,7 @@ export const getSampleData = async () => {
 
 ### Handling responses
 
-To handle response with handlin, you first need to import the handleResponse method:
+To handle response with handlin, you first need to import the handleResponse method to your controller:
 
 ```ts
 import { handleResponse } from "handlin";
@@ -153,7 +154,7 @@ const response = await SampleService.getSampleData();
 return handleResponse(response, req, res);
 ```
 
-Full sample of the code from controller:
+Full sample of the code from sample.controller.ts:
 
 ```ts
 import { Request, Response } from "express";
@@ -168,7 +169,8 @@ export const getSampleData = async (req: Request, res: Response) => {
     //Handle the response - return data to the user
     return handleResponse(response, req, res);
   } catch (e) {
-    //In case of a potential error, catch it, generate error response and handle it immediately
+    //In case of a potential error, catch it;
+    //generate error response and handle it immediately
 
     if (e instanceof Error) {
       return handleResponse(
@@ -181,9 +183,20 @@ export const getSampleData = async (req: Request, res: Response) => {
 };
 ```
 
+### Sample Express Project using handlin
+
+You can check out a demo express project utilizing [handlin](https://www.npmjs.com/package/handlin) package here:
+
+[MRCS-express-boilerplate](https://github.com/bas0N/MRCS-express-boilerplate)
+</br>
+
+</br>
+
 ## Contributing
 
-## Versioning
+As an open source project, handlin depends on the contributions and support of its community. Whether you're a seasoned developer or just starting out, there's a place for you in the handlin project. We welcome bug reports, bug fixes, new features, and documentation improvements.
+
+If you're interested in getting involved, please check out our [GitHub repository](https://github.com/bas0N/handlin) and read our contribution guidelines.
 
 ## Authors
 
