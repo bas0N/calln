@@ -93,7 +93,6 @@ It takes as a parameter an object with the following fields:
 | Property    | Type   | Required | Description                                                                                                                          |
 | ----------- | ------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | code        | number | Yes      | A http response code that should be sent                                                                                             |
-| success     | bool   | No       | Boolean value indicating if the response resulted with a success                                                                     |
 | status      | string | No       | By default it attaches statuses correcsponsing to status codes from [http-status](https://www.npmjs.com/package/http-status) library |
 | message     | string | No       | By default it attaches messages correcsponsing to status codes from [http-status](https://www.npmjs.com/package/http-status) library |
 | redirectUrl | string | No       | A url to a destination where the user will be redirected with the response                                                           |
