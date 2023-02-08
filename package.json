@@ -1,6 +1,6 @@
 {
   "name": "handlin",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "NodeJS API response generator and handler.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -18,9 +18,9 @@
   "author": "bas0N",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bas0N/calln/issues"
+    "url": "https://github.com/bas0N/handlin/issues"
   },
-  "homepage": "https://github.com/bas0N/calln#readme",
+  "homepage": "https://github.com/bas0N/handlin#readme",
   "dependencies": {
     "@microsoft/tsdoc": "^0.14.2",
     "express": "^4.18.2",
